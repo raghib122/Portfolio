@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" type="png" href="wisdom.png">
+</head>
+<style>
+  body {
+    background-color: rgb(180, 180, 180);
+  }
+
+  h1 {
+    font-weight: bolder;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-size: 45px;
+    text-decoration: underline;
+    color: white;
+    text-shadow: 2px 4px 4px blue;
+
+    
+  }
+
+
+  .cardstyling{
+    display: flex;
+    justify-content: center;
+
+  }
+</style>
+
+<body>
+  <div class="raghib">
+    <nav class="navbar navbar-expand-lg   " style="background-color: #e3f2fd; ">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-center  me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="blog.html">Blogs</a>
+            </li>
+            <li class="nav-item nav-pills nav-fill">
+              <a class="nav-link-active btn btn-outline-secondary" aria-current="page" href="project.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+
+          <div class="toggle"></div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" click="toggle()" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Enable Dark Mode</label>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="project">
+    <h1>My Projects</h1>
+  </div>
+
+  <div class="cardstyling">
+    <div class="card" style="width: 45rem; height: 35rem;">
+      <img src="weath.jpg" class="card-img-top" alt="...">
+      <div class="card-body" style="overflow: scroll; background:  #e3f2fd;;">
+        <h5 class="card-title" style="font-weight: bolder; color: rgb(116, 116, 23);">WEATHER DETECTION</h5>
+        <p class="card-text" >It is a weather detection API based page created using HTML, CSS & JavaScript. It could fetch weather through API from anywhere in the World.</p>
+        <a href="https://raghib122.github.io/Weather/" target="_blank" class="btn btn-dark" style="margin: 10px;">Click Here</a>
+      </div>
+    </div>
+    <div class="card mx-3" style="width: 45rem; height: 35rem;">
+      <img src="notes.jpg" class="card-img-top" alt="...">
+      <div class="card-body" style="overflow: scroll; background:  #e3f2fd;;">
+        <h5 class="card-title" style="font-weight: bolder; color: blue;">NOTE WEB PAGE</h5>
+        <p class="card-text" >Created a NotePad web page with the help of HTML, CSS and JavaScript. It's a NotePad web page where we can save our daily schedule and reminders on web page only..</p>
+        <a href="https://raghib122.github.io/Weather/" target="_blank" class="btn btn-secondary" style="margin: 10px;">Click Here</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Get the checkbox element
+    const checkbox = document.getElementById("flexSwitchCheckDefault");
+
+    // Add event listener to the checkbox
+    checkbox.addEventListener("click", function () {
+      // Get the body element
+      const body = document.body;
+
+      // Get the label element
+      const label = document.querySelector("label[for='flexSwitchCheckDefault']");
+
+      // Toggle the background color and text color based on checkbox status
+      if (checkbox.checked) {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+        label.style.color = "wheat";
+      } else {
+        body.style.backgroundColor = "";
+        body.style.color = "";
+        label.style.color = "";
+      }
+    });
+  </script>
+</body>
+
+</html>
