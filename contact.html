@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" type="png" href="wisdom.png">
+     <link rel="stylesheet" href="style.css">
 </head>
 <style>
     body{
@@ -52,11 +53,9 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form> -->
-          <div class="toggle"></div>
-          <div class="form-check form-switch">
-            <input class="form-check-input" click="toggle()" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault"> Dark Mode</label>
-          </div>
+           <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
         </div>
       </div>
     </nav>
@@ -89,29 +88,6 @@
    <!-- End Contact Section  -->
   </div>
 </div>
-<script>
-   // Get the checkbox element
-const checkbox = document.getElementById("flexSwitchCheckDefault");
-
-// Add event listener to the checkbox
-checkbox.addEventListener("click", function() {
-  // Get the body element
-  const body = document.body;
-
-  // Get the label element
-  const label = document.querySelector("label[for='flexSwitchCheckDefault']");
-
-  // Toggle the background color and text color based on checkbox status
-  if (checkbox.checked) {
-    body.style.backgroundColor = "black";
-    body.style.color = "white";
-    label.style.color = "wheat";
-  } else {
-    body.style.backgroundColor = "";
-    body.style.color = "";
-    label.style.color = "";
-  }
-});
-</script>
+<script src="index.js"></script>
 </body>
 </html>
