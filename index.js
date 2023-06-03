@@ -9,7 +9,7 @@ var darkModeToggle = document.getElementById('darkModeToggle');
         body.style.color = 'white';
       } else {
         // Set default background
-        body.style.backgroundColor = '#f4f4f5';
+        body.style.backgroundColor = '';
         body.style.color = '';
       }
     });
